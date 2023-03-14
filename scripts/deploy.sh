@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/home/ec2-user/app/deploy
+REPOSITORY=/home/ec2-user/DevOps-study
 cd $REPOSITORY
 
 APP_NAME=DevOps-study
