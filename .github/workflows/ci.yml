@@ -60,7 +60,7 @@ jobs:
         run: |
           aws deploy create-deployment \
           --application-name springboot-cicd \
-          --deployment-group-name springboot-intro-deploy-group \
+          --deployment-group-name cicd-example \
           --file-exists-behavior OVERWRITE \
           --s3-location bucket=cicd-example-bucket,bundleType=zip,key=DevOps-study.zip \
           --region ap-northeast-2
