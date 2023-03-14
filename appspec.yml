@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/app/deploy
+    overwrite: yes
+file_exists_behavior: OVERWRITE
 
 permissions:
   - object: /
@@ -10,8 +12,8 @@ permissions:
     group: ec2-user
 
 hooks:
-  BeforeInstall:
-    - location: scripts/beforeInstall.bash
+#  BeforeInstall:
+#    - location: scripts/beforeInstall.bash
   AfterInstall:
     - location: scripts/deploy.sh
       timeout: 60
