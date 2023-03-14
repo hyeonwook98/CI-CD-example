@@ -63,7 +63,7 @@ jobs:
         run: aws s3 cp --region ap-northeast-2 ./DevOps-study.zip s3://cicd-example-bucket/DevOps-study.zip
 
       - name: Code Deploy
-        run: aws deploy create-deployment --application-name springboot-cicd --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name cicd-example --s3-location bucket=cicd-example-bucket,bundleType=zip,key=DevOps-study.zip
+        run: aws deploy create-deployment --application-name cicd-example --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name cicd-example --s3-location bucket=cicd-example-bucket,bundleType=zip,key=DevOps-study.zip
 
 
 #      # S3 Bucket으로 copy
