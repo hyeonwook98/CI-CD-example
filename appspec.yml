@@ -3,8 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/DevOps-study
-    overwrite: yes
-file_exists_behavior: OVERWRITE
+#    overwrite: yes
+#file_exists_behavior: OVERWRITE
 
 permissions:
   - object: /

@@ -6,7 +6,7 @@ cd $REPOSITORY
 echo "입장"
 APP_NAME=DevOps-study
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep 'SNAPSHOT.jar' | tail -n 1)
-JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
+JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME배포
 
 CURRENT_PID=$(pgrep -f $APP_NAME)
 
