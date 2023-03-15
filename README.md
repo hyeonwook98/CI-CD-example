@@ -1,2 +1,2 @@
-# DevOps-study
-DevOps 학습 공간입니다.
+# CI-CD-example
+CI/CD 예제 프로젝트입니다.
